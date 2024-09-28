@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JS</title>
+</head>
+<body>
+   <button onclick="multiply(124,4)">Execute JS functions</button>
+   <p>Function of JS</p>
+    <button type="button" onclick="myfunction()">Click Me</button>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <h1 id="demo"></h1>
+   <script>
+    function multiply(x,y){
+        document.write(x*y)
+    }
+    var b=5; //outside
+        var a=50; //outside
+        function myfunction(){
+            var y=2; //inside
+            document.getElementById("demo").innerHTML=b*y;
+        }
+        document.getElementById("demo1").innerHTML=y;
+        document.getElementById("demo1").innerHTML=b;
+        function multiply(x,y){
+         return x*y
+     }
+     document.getElementById("demo").innerHTML=multiply(10,3)
+   </script>
+</body>
+</html>
